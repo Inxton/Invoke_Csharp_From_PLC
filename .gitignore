@@ -220,8 +220,6 @@ CompilerCache.md
 log.txt
 pal.txt
 _meta/
-_generated/
-*.g.cs
 *.lbz
 version.info
 *.plcproj.version.update
