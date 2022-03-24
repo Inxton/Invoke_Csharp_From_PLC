@@ -1,0 +1,9 @@
+{
+  "solution": {
+    "path": "Invoke_Csharp_From_PLC.sln",
+    "projects": [
+      "CSharp\\Invoke_Csharp_From_PLC.csproj",
+      "PLC\\PlcConnector\\PlcConnector.csproj"
+    ]
+  }
+}
