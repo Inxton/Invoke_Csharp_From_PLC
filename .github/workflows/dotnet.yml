@@ -1,0 +1,20 @@
+name: .NET
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore .\Invoke_Csharp_From_PLC_wihout_plc_project.slnf
+    - name: Build
+      run: dotnet build .\Invoke_Csharp_From_PLC_wihout_plc_project.slnf --no-restore
+
