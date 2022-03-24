@@ -19,7 +19,7 @@ namespace Invoke_Csharp_From_PLC
 
         private void CallThisMethod()
         {
-            Plc.MAIN.App.Increment.Cyclic = Plc.MAIN.App.Increment.Cyclic * 2 ;
+            Plc.MAIN.App.Increment.Cyclic = Plc.MAIN.App.Increment.Cyclic +1  ;
         }
     }
 }
